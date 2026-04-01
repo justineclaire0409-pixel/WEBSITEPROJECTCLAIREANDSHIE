@@ -1,0 +1,96 @@
+.about-section {
+            padding: 60px 20px;
+            background-color: #fcfcfc;
+        }
+        .about-box { 
+            background: white; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            border: 1px solid #d4af37; /* Cleaned up to a elegant single line or keep your double border */
+            outline: 4px double #d4af37;
+            outline-offset: -15px;
+            padding: 60px; 
+            text-align: center;
+            line-height: 1.8;
+        }
+        .about-box h1 {
+            font-family: 'Serif', 'Playfair Display', serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            color: #1a1819;
+        }
+        .about-box p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .about-box hr {
+            width: 50%;
+            margin: 30px auto;
+            border: 0;
+            border-top: 1px solid #d4af37;
+        }
+        .return-link {
+            text-decoration: none;
+            color: #d4af37;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 10% 20px;
+            font-family: Arial, sans-serif;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-column h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        .footer-column ul li a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+        .footer-column ul li a:hover {
+            color: #fff;
+        }
+        .app-buttons img {
+            width: 120px;
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.75rem;
+            color: #777;
+        }

@@ -1,0 +1,345 @@
+/* --------------------
+   RESET & GLOBAL
+-------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --------------------
+   HEADER & NAVBAR
+-------------------- */
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d1c1c1;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 15px 20px;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #e24529;
+    color: #000;
+}
+
+/* --------------------
+   SLIDER HERO
+-------------------- */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {margin-left:0;}
+    33% {margin-left:-100%;}
+    66% {margin-left:-200%;}
+    100% {margin-left:0;}
+}
+
+
+/* ===========
+   CATEGORIES 
+   ============ */
+
+.categories {
+    display: flex;
+    flex-wrap: nowrap;        /* Pinipigilan nito ang pag-wrap para manatiling straight line */
+    gap: 15px;               /* Space sa pagitan ng mga cards */
+    padding: 40px 20px;
+    justify-content: center;  /* Center ang buong row */
+    background-color: #f8f8f8;
+    overflow-x: auto;         /* Para kung sakaling sumobra sa screen, pwedeng i-scroll sa mobile */
+}
+
+.categories .cat {
+    flex: 1;                  /* Pantay-pantay ang lapad ng lahat ng cards */
+    min-width: 180px;         /* Sapat na lapad para magkasya ang lima sa isang screen */
+    max-width: 250px;         /* Para hindi masyadong lumaki sa wide screens */
+    background-color: #e9e9e9; 
+    border-radius: 15px;      /* Medyo rounded corners gaya ng nasa image */
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;   /* Text sa taas, Image sa baba o vice versa */
+    align-items: center;      /* Gitna lahat ng contents */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.categories .cat:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE STYLING */
+.categories .cat img {
+    width: 80%;               /* Mas malaki ng konti ang image sa loob ng card */
+    height: 120px;            /* Fixed height para pantay-pantay lahat ng cards */
+    object-fit: contain;      /* Para hindi ma-stretch ang images ng Makeup, Bags, etc. */
+    margin-top: 10px;
+}
+
+/* TEXT AREA STYLING */
+.text-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.text-overlay h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;          /* Nilakihan ng konti para madaling mabasa */
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* BUTTON STYLING */
+.shop-now {
+    background: transparent;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.shop-now:hover {
+    background: #000;
+    color: #fff;
+}
+/* --------------------
+   PRODUCTS GRID
+-------------------- */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #000;
+}
+
+.card p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card button {
+    background-color: #e24529;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #e24529;
+}
+
+/* --------------------
+   PRODUCT DETAIL
+-------------------- */
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.product-detail img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.product-info p {
+    margin-bottom: 15px;
+}
+
+/* --------------------
+   FORMS
+-------------------- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e24529;
+}
+
+.contact-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e24529;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e24529;
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
+footer {
+background-color: #111;
+color: #fff;
+width: 100%;
+padding: 40px 20px;
+margin-top: auto; /*  para dumikit siya sa dulo */
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+footer h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 5px; 
+    text-align: center;
+}
+/* --------------------
+   ABOUT US
+-------------------- */
+.about-section {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-section .about-box {
+    max-width: 800px;
+    text-align: center;
+    color: black;
+}
+
+
+/* --------------------
+   MEDIA QUERIES
+-------------------- */
+@media(max-width: 1024px) {
+    .product-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-detail img {
+        width: 90%;
+    }
+}
+
+@media(max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    .top-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .categories, .products {
+        padding: 20px;
+    }
+}

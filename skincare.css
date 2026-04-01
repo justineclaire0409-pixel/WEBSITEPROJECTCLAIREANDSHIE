@@ -1,0 +1,14 @@
+/* I-reset ang styles para sa lahat ng images sa loob ng .products grid */
+.products img {
+    max-width: 100%;       /* Para hindi sumobra sa lapad ng card */
+    height: 180px;         /* Fixed height para pantay-pantay lahat ng picture */
+    object-fit: contain;   /* Para hindi ma-stretch o ma-compress ang image */
+    display: block;        /* Para maayos ang alignment */
+    margin: 0 auto;        /* Para nasa gitna ang image sa card */
+}
+
+/* Siguraduhing pantay-pantay ang aspect ratio ng bawat card */
+.card img {
+    border-radius: 10px;   /* Optional: Konting curve gaya ng nasa makeup page */
+    margin-bottom: 10px;   /* Space sa pagitan ng image at text */
+}

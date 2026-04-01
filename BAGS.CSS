@@ -1,0 +1,106 @@
+/* --- GENERAL PAGE STYLES --- */
+body {
+    /* Set the default font to Montserrat for body text and descriptions */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; /* Use a light weight for a delicate feel */
+    line-height: 1.6;
+    margin: 0;
+    color: #333; /* Dark gray for text, more elegant than solid black */
+}
+
+/* --- THE LOGO --- */
+header .logo {
+    /* Apply Playfair Display to the brand name for an elegant, luxury feel */
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1.5px; /* Add some space between letters for a classic look */
+    text-transform: uppercase;
+}
+
+/* --- NAVIGATION LINKS --- */
+nav a {
+    /* Clear sans-serif is best for navigation, using a slightly bolder weight */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* --- SECTION HEADERS ("Bags") --- */
+.section h2 {
+    /* Large serif header for product categories */
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* --- EXCLUSIVE BRAND TAG (e.g., "ONLY AT Veloura Serélyn") --- */
+.card .brand-tag {
+    /* Keep it sharp and clear, maybe all caps */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* (Color is applied in the inline HTML style, which is fine) */
+}
+
+/* --- PRODUCT TITLES --- */
+.card h3 {
+    /* Apply Playfair Display to the bag name to match the brand logo's elegance */
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* --- PRODUCT DESCRIPTIONS --- */
+.card p:not(.price):not(.brand-tag) {
+    /* Delicate, readable body text */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; /* Very light weight for a soft aesthetic */
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* --- PRICE --- */
+.card .price {
+    /* Apply Playfair Display to make the price look classic and part of the brand image */
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #e00021; /* Match the red brand tag color */
+}
+
+/* --- RATINGS --- */
+.card .rating {
+    /* Keep ratings standard for clarity */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* --- ADD TO CART BUTTON --- */
+.card button {
+    /* Strong, clear button font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    /* Elegant design: solid background with sharp edges (like in the picture) */
+    background-color: #d11e1e; /* Classic red, matching the exclusive tag */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
